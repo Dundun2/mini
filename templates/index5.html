@@ -18,13 +18,25 @@
 
     <title>Title</title>
     <script>
-        $("#result").load("/index2")
+       let first = localStorage.getItem("key1");
+
+       let second = localStorage.getItem("key2");
+
+       let third = localStorage.getItem("key3");
+
+       let fourth = localStorage.getItem("key4");
+
+       let MBTI = first + second +third + fourth
+       console.log(MBTI)
+
     </script>
 </head>
 <body>
 
-<div id="result">
-
+<div>
+<script>
+    document.write( MBTI )
+</script>
 </div>
 
 </body>
